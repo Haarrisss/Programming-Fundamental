@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int arr[5], search;
+    bool found = false;
+    for(int i = 0; i < 5; i++)
+    {
+        cout << "Enter number: ";
+        cin >> arr[i];
+    }
+    cout << "Enter number to search: ";
+    cin >> search;
+    for(int i = 0; i < 5; i++)
+    {
+        if(arr[i] == search)
+        {
+            found = true;
+        }
+    }
+    if(found)
+        cout << "Number Found";
+    else
+        cout << "Number Not Found";
+
+    return 0;
+}
