@@ -1,0 +1,113 @@
+Sum of Numbers (1 to N)
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n, sum = 0;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    for(int i = 1; i <= n; i++)
+    {
+        sum = sum + i;
+    }
+
+    cout << "Sum = " << sum;
+
+    return 0;
+}
+
+2.Multiplication Table
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    for(int i = 1; i <= 10; i++)
+    {
+        cout << n << " x " << i << " = " << n * i << endl;
+    }
+
+    return 0;
+}
+
+3.Factorial
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n, fact = 1;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    for(int i = 1; i <= n; i++)
+    {
+        fact = fact * i;
+    }
+
+    cout << "Factorial = " << fact;
+
+    return 0;
+}
+
+4. Count Even and Odd Numbers (1 to N)
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n, even = 0, odd = 0;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    for(int i = 1; i <= n; i++)
+    {
+        if(i % 2 == 0)
+            even++;
+        else
+            odd++;
+    }
+
+    cout << "Even = " << even << endl;
+    cout << "Odd = " << odd;
+
+    return 0;
+}
+
+5.Sum of Digits
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n, sum = 0;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    while(n > 0)
+    {
+        sum = sum + n % 10;
+        n = n / 10;
+    }
+
+    cout << "Sum of digits = " << sum;
+
+    return 0;
+}
+
